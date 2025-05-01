@@ -1,14 +1,14 @@
 
-# Wing FEA Optimiser
+# Aircraft Wing Finite Element Method Solver
 
 A finite element analysis tool for aircraft wing structural optimisation with material property and geometric parameter optimisation.
 
 ## Features
-- Parametric wing cross-section generation
-- Orthotropic material modeling (composites)
+- Parametric 2D wing generation (birdseye)
+- Orthotropic material modeling (composites). Capable of 8 noded element calculations.
 - Stress minimisation using differential evolution
 - Multi-core parallel processing
-- ParaView-compatible VTK output
+- ParaView-compatible VTK output, including deformed model.
 - Sparsity pattern visualisation
 
 ## Installation
