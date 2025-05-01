@@ -1,15 +1,15 @@
 
-# Wing FEA Optimizer
+# Wing FEA Optimiser
 
-A finite element analysis tool for aircraft wing structural optimization with material property and geometric parameter optimization.
+A finite element analysis tool for aircraft wing structural optimisation with material property and geometric parameter optimisation.
 
 ## Features
 - Parametric wing cross-section generation
 - Orthotropic material modeling (composites)
-- Stress minimization using differential evolution
+- Stress minimisation using differential evolution
 - Multi-core parallel processing
 - ParaView-compatible VTK output
-- Sparsity pattern visualization
+- Sparsity pattern visualisation
 
 ## Installation
 
@@ -42,15 +42,15 @@ results = run_analysis(*params)
 
 # Save results
 results['deformed_mesh'].save('wing_deformed.vtk')
-Optimization
+Optimisation
 python
-from wingfea.optimization import optimiseStress
+from wingfea.optimisation import optimiseStress
 
-# Run material optimization study
+# Run material optimisation study
 optimiseStress()  # Results saved to optimisation_results.csv
 
 #Project Structure
-wing-fea-optimizer/
+wing-fea-optimiser/
 ├── src/
 │   └── wingfea/
 │       ├── __init__.py
@@ -58,9 +58,9 @@ wing-fea-optimizer/
 │       ├── materials.py     # Material models
 │       ├── mesh.py          # GMSH integration
 │       ├── solver.py        # FEA core
-│       ├── optimization.py  # DE optimization
+│       ├── optimisation.py  # DE optimisation
 │       ├── utils.py         # Helper functions
-│       └── visualization.py # VTK/ParaView tools
+│       └── visualisation.py # VTK/ParaView tools
 ├── tests/                   # Unit tests
 ├── examples/                # Usage examples
 ├── requirements.txt         # Python dependencies
